@@ -50,6 +50,9 @@ dependencies:
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
+  encoding:
+    specifier: ^0.1.13
+    version: 0.1.13
   eslint:
     specifier: 8.47.0
     version: 8.47.0
@@ -73,7 +76,7 @@ dependencies:
     version: 18.2.0(react@18.2.0)
   react-email:
     specifier: 1.9.4
-    version: 1.9.4
+    version: 1.9.4(encoding@0.1.13)
   react-hook-form:
     specifier: ^7.45.4
     version: 7.45.4(react@18.2.0)
@@ -82,7 +85,7 @@ dependencies:
     version: 9.1.3(react-dom@18.2.0)(react@18.2.0)
   resend:
     specifier: ^1.0.0
-    version: 1.0.0
+    version: 1.0.0(encoding@0.1.13)
   tailwind-merge:
     specifier: ^1.14.0
     version: 1.14.0
@@ -606,13 +609,13 @@ packages:
     engines: {node: '>= 14'}
     dev: false
 
-  /@octokit/core@4.2.4:
+  /@octokit/core@4.2.4(encoding@0.1.13):
     resolution: {integrity: sha512-rYKilwgzQ7/imScn3M9/pFfUf4I1AZEH3KhyJmtPdE2zfaXAn2mFfUy4FbKewzc2We5y/LlKLj36fWJLKC2SIQ==}
     engines: {node: '>= 14'}
     dependencies:
       '@octokit/auth-token': 3.0.4
-      '@octokit/graphql': 5.0.6
-      '@octokit/request': 6.2.8
+      '@octokit/graphql': 5.0.6(encoding@0.1.13)
+      '@octokit/request': 6.2.8(encoding@0.1.13)
       '@octokit/request-error': 3.0.3
       '@octokit/types': 9.3.2
       before-after-hook: 2.2.3
@@ -630,11 +633,11 @@ packages:
       universal-user-agent: 6.0.0
     dev: false
 
-  /@octokit/graphql@5.0.6:
+  /@octokit/graphql@5.0.6(encoding@0.1.13):
     resolution: {integrity: sha512-Fxyxdy/JH0MnIB5h+UQ3yCoh1FG4kWXfFKkpWqjZHw/p+Kc8Y44Hu/kCgNBT6nU1shNumEchmW/sUO1JuQnPcw==}
     engines: {node: '>= 14'}
     dependencies:
-      '@octokit/request': 6.2.8
+      '@octokit/request': 6.2.8(encoding@0.1.13)
       '@octokit/types': 9.3.2
       universal-user-agent: 6.0.0
     transitivePeerDependencies:
@@ -651,7 +654,7 @@ packages:
     peerDependencies:
       '@octokit/core': '>=4'
     dependencies:
-      '@octokit/core': 4.2.4
+      '@octokit/core': 4.2.4(encoding@0.1.13)
       '@octokit/tsconfig': 1.0.2
       '@octokit/types': 9.3.2
     dev: false
@@ -661,7 +664,7 @@ packages:
     peerDependencies:
       '@octokit/core': '>=3'
     dependencies:
-      '@octokit/core': 4.2.4
+      '@octokit/core': 4.2.4(encoding@0.1.13)
     dev: false
 
   /@octokit/plugin-rest-endpoint-methods@7.2.3(@octokit/core@4.2.4):
@@ -670,7 +673,7 @@ packages:
     peerDependencies:
       '@octokit/core': '>=3'
     dependencies:
-      '@octokit/core': 4.2.4
+      '@octokit/core': 4.2.4(encoding@0.1.13)
       '@octokit/types': 10.0.0
     dev: false
 
@@ -683,7 +686,7 @@ packages:
       once: 1.4.0
     dev: false
 
-  /@octokit/request@6.2.8:
+  /@octokit/request@6.2.8(encoding@0.1.13):
     resolution: {integrity: sha512-ow4+pkVQ+6XVVsekSYBzJC0VTVvh/FCTUUgTsboGq+DTeWdyIFV8WSCdo0RIxk6wSkBTHqIK1mYuY7nOBXOchw==}
     engines: {node: '>= 14'}
     dependencies:
@@ -691,17 +694,17 @@ packages:
       '@octokit/request-error': 3.0.3
       '@octokit/types': 9.3.2
       is-plain-object: 5.0.0
-      node-fetch: 2.6.12
+      node-fetch: 2.6.12(encoding@0.1.13)
       universal-user-agent: 6.0.0
     transitivePeerDependencies:
       - encoding
     dev: false
 
-  /@octokit/rest@19.0.7:
+  /@octokit/rest@19.0.7(encoding@0.1.13):
     resolution: {integrity: sha512-HRtSfjrWmWVNp2uAkEpQnuGMJsu/+dBr47dRc5QVgsCbnIc1+GFEaoKBWkYG+zjrsHpSqcAElMio+n10c0b5JA==}
     engines: {node: '>= 14'}
     dependencies:
-      '@octokit/core': 4.2.4
+      '@octokit/core': 4.2.4(encoding@0.1.13)
       '@octokit/plugin-paginate-rest': 6.1.2(@octokit/core@4.2.4)
       '@octokit/plugin-request-log': 1.0.4(@octokit/core@4.2.4)
       '@octokit/plugin-rest-endpoint-methods': 7.2.3(@octokit/core@4.2.4)
@@ -2072,6 +2075,12 @@ packages:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
     dev: false
 
+  /encoding@0.1.13:
+    resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
+    dependencies:
+      iconv-lite: 0.6.3
+    dev: false
+
   /enhanced-resolve@5.15.0:
     resolution: {integrity: sha512-LXYT42KJ7lpIKECr2mAXIaMldcNCh/7E0KBKOu4KSfkHmP+mZmSs+8V5gBAqisWBy0OO4W5Oyys0GO1Y8KtdKg==}
     engines: {node: '>=10.13.0'}
@@ -2893,6 +2902,13 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: false
 
+  /iconv-lite@0.6.3:
+    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      safer-buffer: 2.1.2
+    dev: false
+
   /ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: false
@@ -3462,7 +3478,7 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /node-fetch@2.6.12:
+  /node-fetch@2.6.12(encoding@0.1.13):
     resolution: {integrity: sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==}
     engines: {node: 4.x || >=6.0.0}
     peerDependencies:
@@ -3471,6 +3487,7 @@ packages:
       encoding:
         optional: true
     dependencies:
+      encoding: 0.1.13
       whatwg-url: 5.0.0
     dev: false
 
@@ -3866,14 +3883,14 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-email@1.9.4:
+  /react-email@1.9.4(encoding@0.1.13):
     resolution: {integrity: sha512-DNUQb7xzAlMga2ZppG57bnWhJnqOEcTYzxNvLA4IVCiYJkgPNVukFMOZVG2OuQ0W8ddiF6bLZBKDZHnnIenbpw==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
       '@commander-js/extra-typings': 9.4.1(commander@9.4.1)
       '@manypkg/find-root': 2.1.0
-      '@octokit/rest': 19.0.7
+      '@octokit/rest': 19.0.7(encoding@0.1.13)
       '@react-email/render': 0.0.6
       chokidar: 3.5.3
       commander: 9.4.1
@@ -4060,12 +4077,12 @@ packages:
       functions-have-names: 1.2.3
     dev: false
 
-  /resend@1.0.0:
+  /resend@1.0.0(encoding@0.1.13):
     resolution: {integrity: sha512-8LEE4gncmcm8bsvxvahZFpFk5hxUrKdagqWoX/MRXVU2YZ9coYxqZDeDYXG9pexz1A694bjE1hiQbBAA+bHAow==}
     engines: {node: '>=16'}
     dependencies:
       '@react-email/render': 0.0.7
-      node-fetch: 2.6.12
+      node-fetch: 2.6.12(encoding@0.1.13)
       type-fest: 3.13.0
     transitivePeerDependencies:
       - encoding
@@ -4155,6 +4172,10 @@ packages:
       call-bind: 1.0.2
       get-intrinsic: 1.2.1
       is-regex: 1.1.4
+    dev: false
+
+  /safer-buffer@2.1.2:
+    resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: false
 
   /scheduler@0.23.0:
