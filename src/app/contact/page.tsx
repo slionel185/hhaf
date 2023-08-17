@@ -28,7 +28,14 @@ export default function ContactPage() {
             body: JSON.stringify({ name, email, phone, inquiry, message })
         }).then(res => res.json())
 
-        console.log(res)
+        if(res.id) {
+            toast.success('Inquiry Sent')
+            setName('')
+            setPhone('')
+            setEmail('')
+            setInquiry('')
+            setMessage('')
+        }
     }
 
     return (

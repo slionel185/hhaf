@@ -14,7 +14,7 @@ export async function POST(req: Request) {
 
         const data = await resend.emails.send({
             from: 'storrence@titansoftware.dev',
-            to: ['slionel1850@gmail.com'],
+            to: ['slionel1850@gmail.com', 'jessica@hhaftransportation.com', 'info@hhaftransportation.com'],
             subject: `New Inquiry: ${subjectLine}`,
             react: InquiryTemplate({ name, email, inquiry, phone, message })
         })
