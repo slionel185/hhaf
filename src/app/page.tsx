@@ -1,4 +1,4 @@
-import { Heart, Truck, PhoneCall } from 'lucide-react'
+import { Heart, Truck, PhoneCall, Star, Quote } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
@@ -88,6 +88,69 @@ export default function HomePage() {
                     <Separator />
                 </div>
             </section>
+            <div id='feedback' style={{ background: 'url(/Testimonials.jpg) no-repeat center', backgroundSize: '130%' }} className='w-full flex justify-center items-center relative p-8 lg:py-16'>
+                <div className='z-[1] bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full' />
+                <div className='z-[2] gap-2 flex flex-col justify-center items-center max-w-7xl'>
+                    <h1 className='text-green font-semibold px-8 uppercase hidden lg:block'>TESTIMONIALS</h1>
+                    <h1 className='text-xl lg:text-3xl text-white font-bold'>What Parents Say</h1>
+                    <div className='flex flex-col lg:flex-row lg:gap-12 w-full lg:py-12'>
+                        <Card className='shadow-xl flex flex-col justify-between w-full'>
+                            <CardHeader>
+                                <CardTitle className='flex gap-2'>
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent className='text-left'>
+                                <p>Happy Hand & Feet Transportation has been a reliable resource for our out-of-district transportation needs. I would highly recommend them.</p>
+                            </CardContent>
+                            <CardFooter className='flex flex-row justify-between items-center'>
+                                <h1 className='font-semibold'>Doe Family</h1>
+                                <Quote fill='rgba(37, 117, 252, 0.2)' stroke='none' className='h-8 w-8' />
+                            </CardFooter>
+                        </Card>
+                        <Card className='shadow-xl hidden lg:flex flex-col justify-between w-full'>
+                            <CardHeader>
+                                <CardTitle className='flex gap-2'>
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent className='text-left'>
+                                <p>Happy Hands & Feet Transportatiion has provided great service for our children. Before our kids would spend almost 2 hours a day on the school bus before and after school. Now they have more free time to finish their homework and just be kids. Thanks HHAF Transportation.</p>
+                            </CardContent>
+                            <CardFooter className='flex flex-row justify-between items-center'>
+                                <h1 className='font-semibold'>Jameson Family</h1>
+                                <Quote fill='rgba(37, 117, 252, 0.2)' stroke='none' className='h-8 w-8' />
+                            </CardFooter>
+                        </Card>
+                        <Card className='shadow-xl hidden lg:flex flex-col justify-between w-full'>
+                            <CardHeader>
+                                <CardTitle className='flex gap-2'>
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                    <Star fill='#fec42d' stroke='none' />
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent className='text-left'>
+                                <p>Happy Hand & Feet Transportation has been a reliable resource for our out-of-district transportation needs. I would highly recommend them.</p>
+                            </CardContent>
+                            <CardFooter className='flex flex-row justify-between items-center'>
+                                <h1 className='font-semibold'>Doe Family</h1>
+                                <Quote fill='rgba(37, 117, 252, 0.2)' stroke='none' className='h-8 w-8' />
+                            </CardFooter>
+                        </Card>
+                    </div>
+                </div>    
+            </div>
         </div>
     )
 }
