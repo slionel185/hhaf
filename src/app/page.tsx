@@ -31,7 +31,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className='flex flex-col justify-center text-lg gap-8'>
-                        <p>Our service helps families maintain balance by providing safe, reliable transportation services at a fair price. While, protecting kids from the dangers of walking to school alone or on busy streets. We strive to meet the need sof parents and become a valuable resource in the communities. HHAF Kids Transportation offers a variety of convenient tranportation packages as well as single trip services if you only need our services occasionally. No matter what your child's tranportaiton needs are, we can help you!</p>
+                        <p>Our service helps families maintain balance by providing safe, reliable transportation services at a fair price. While, protecting kids from the dangers of walking to school alone or on busy streets. We strive to meet the needs of parents and become a valuable resource in the communities. HHAF Kids Transportation offers a variety of convenient tranportation packages as well as single trip services if you only need our services occasionally. No matter what your child{'\''}s tranportaiton needs are, we can help you!</p>
                         <p>Call us today to transport your student! (302) 897-2375</p>
                     </div>
                     <Separator />
